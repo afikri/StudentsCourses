@@ -13,6 +13,7 @@
             <th>Nr</th>
             <th>List of the Students</th>
             <th>List of the Courses</th>
+			<th>Address</th>
 
             </tr>
             </thead>
@@ -25,6 +26,7 @@
                     <td>{{$nr}}</td>
                     <td>{{$student->name}}</td>
                     <td>{{$course->name}}</td> 
+					<td>{{$student->address()->student_id}}</td>
                   </tr>
                   <?php 
                   }
